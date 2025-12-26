@@ -34,8 +34,8 @@ const projects = [
         previewLink: "#"
     },
     {
-        title: "Em breve",
-        date: "Jan - Mar 2024",
+        title: "Space Invaders Retro",
+        date: "Em breve",
         description: "Recriação interativa do clássico arcade. Desenvolvido para demonstrar lógica de colisão, renderização gráfica otimizada e manipulação de DOM em tempo real.",
         image: "/img/space.png",
         tags: ["JavaScript", "Canvas API", "HTML5"],
@@ -43,8 +43,8 @@ const projects = [
         previewLink: "#"
     },
     {
-        title: "Em breve",
-        date: "Ago - Out 2023",
+        title: "Sistema de Agendamento",
+        date: "Em breve",
         description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
         image: "/img/agendamento.png",
         tags: ["PHP", "Node.js", "AI Integration"],
