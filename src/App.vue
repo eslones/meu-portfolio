@@ -26,7 +26,7 @@ const form = ref({
 const projects = [
     {
         title: "E-Commerce Full Stack",
-        date: "Jul - Dez 2024",
+        date: "Em breve",
         description: "Uma réplica funcional de plataforma de e-commerce inspirada na Shopee. Conta com dashboard administrativo, gestão de estoque e gateway de pagamentos integrado.",
         image: "/img/e-commerce.png", 
         tags: ["Laravel", "Vue.js", "MySQL"],
@@ -34,7 +34,7 @@ const projects = [
         previewLink: "#"
     },
     {
-        title: "Space Invaders Retro",
+        title: "Em breve",
         date: "Jan - Mar 2024",
         description: "Recriação interativa do clássico arcade. Desenvolvido para demonstrar lógica de colisão, renderização gráfica otimizada e manipulação de DOM em tempo real.",
         image: "/img/space.png",
@@ -43,7 +43,7 @@ const projects = [
         previewLink: "#"
     },
     {
-        title: "Sistema de Agendamento",
+        title: "Em breve",
         date: "Ago - Out 2023",
         description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
         image: "/img/agendamento.png",
@@ -53,7 +53,7 @@ const projects = [
     },
     {
         title: "Portfólio Pessoal",
-        date: "Nov - Dez 2025",
+        date: "Out - Dez 2025",
         description: "Este site que você está vendo! Desenvolvido com foco em performance, SEO e design responsivo, utilizando as melhores práticas do ecossistema Vue e Tailwind.",
         image: "/img/portfolio.png",
         tags: ["Vue 3", "TailwindCSS", "Vite"],
