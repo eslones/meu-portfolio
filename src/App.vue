@@ -28,7 +28,7 @@ const projects = [
         title: "E-Commerce Full Stack",
         date: "Jul - Dez 2024",
         description: "Uma réplica funcional de plataforma de e-commerce inspirada na Shopee. Conta com dashboard administrativo, gestão de estoque e gateway de pagamentos integrado.",
-        image: "/public/img/e-commerce.png", 
+        image: "/img/e-commerce.png", 
         tags: ["Laravel", "Vue.js", "MySQL"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
@@ -37,7 +37,7 @@ const projects = [
         title: "Space Invaders Retro",
         date: "Jan - Mar 2024",
         description: "Recriação interativa do clássico arcade. Desenvolvido para demonstrar lógica de colisão, renderização gráfica otimizada e manipulação de DOM em tempo real.",
-        image: "/public/img/space.png",
+        image: "/img/space.png",
         tags: ["JavaScript", "Canvas API", "HTML5"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
@@ -46,7 +46,7 @@ const projects = [
         title: "Sistema de Agendamento",
         date: "Ago - Out 2023",
         description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
-        image: "/public/img/agendamento.png",
+        image: "/img/agendamento.png",
         tags: ["PHP", "Node.js", "AI Integration"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
@@ -55,7 +55,7 @@ const projects = [
         title: "Portfólio Pessoal",
         date: "Nov - Dez 2025",
         description: "Este site que você está vendo! Desenvolvido com foco em performance, SEO e design responsivo, utilizando as melhores práticas do ecossistema Vue e Tailwind.",
-        image: "/public/img/portfolio.png",
+        image: "/img/portfolio.png",
         tags: ["Vue 3", "TailwindCSS", "Vite"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
