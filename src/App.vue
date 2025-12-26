@@ -28,7 +28,7 @@ const projects = [
         title: "E-Commerce Full Stack",
         date: "Jul - Dez 2024",
         description: "Uma réplica funcional de plataforma de e-commerce inspirada na Shopee. Conta com dashboard administrativo, gestão de estoque e gateway de pagamentos integrado.",
-        image: "img/e-commerce.png", 
+        image: "/public/img/e-commerce.png", 
         tags: ["Laravel", "Vue.js", "MySQL"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
@@ -37,7 +37,7 @@ const projects = [
         title: "Space Invaders Retro",
         date: "Jan - Mar 2024",
         description: "Recriação interativa do clássico arcade. Desenvolvido para demonstrar lógica de colisão, renderização gráfica otimizada e manipulação de DOM em tempo real.",
-        image: "img/space.png",
+        image: "/public/img/space.png",
         tags: ["JavaScript", "Canvas API", "HTML5"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
@@ -46,7 +46,7 @@ const projects = [
         title: "Sistema de Agendamento",
         date: "Ago - Out 2023",
         description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
-        image: "/img/agendamento.png",
+        image: "/public/img/agendamento.png",
         tags: ["PHP", "Node.js", "AI Integration"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
@@ -55,7 +55,7 @@ const projects = [
         title: "Portfólio Pessoal",
         date: "Nov - Dez 2025",
         description: "Este site que você está vendo! Desenvolvido com foco em performance, SEO e design responsivo, utilizando as melhores práticas do ecossistema Vue e Tailwind.",
-        image: "img/portfolio.png",
+        image: "/public/img/portfolio.png",
         tags: ["Vue 3", "TailwindCSS", "Vite"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
@@ -188,7 +188,7 @@ const trocarCor = () => {
 
                 <div class="relative flex-shrink-0">
                     <div class="w-64 h-64 lg:w-[450px] lg:h-[450px] rounded-full border-[6px] border-violet-500 overflow-hidden shadow-2xl shadow-violet-500/20 bg-gray-900/50 relative z-10">
-                        <img src="img/ee.png" alt="Foto de Matheus Candido" class="object-cover w-full h-full"/>
+                        <img src="/img/ee.png" alt="Foto de Matheus Candido" class="object-cover w-full h-full"/>
                     </div>
                     <div class="absolute inset-0 bg-violet-500 blur-[100px] opacity-30 rounded-full -z-10"></div>
                 </div>
@@ -223,7 +223,7 @@ const trocarCor = () => {
             <section id="sobre" :class="[corDeFundo, 'py-50 px-6 transition-colors duration-500']">
                 <div class="max-w-4xl mx-auto flex flex-col items-center text-center ">
                         <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-[3px] border-[#6d28d9] p-1 mb-10 relative">
-                            <img src="img/minhafoto.jpg" alt="Matheus Candido" class="flex w-full h-full object-cover rounded-full"/>
+                            <img src="/public/img/minhafoto.jpg" alt="Matheus Candido" class="flex w-full h-full object-cover rounded-full"/>
                         </div>
                         <h2 class="font-mono text-[#4ade80] text-lg md:text-xl font-bold mb-5 tracking-wide">Sobre Mim</h2>
                         
@@ -318,7 +318,7 @@ const trocarCor = () => {
                         <div class="flex flex-col justify-center">
                             <div class="flex items-center gap-6 mb-8">
                                 <div class="w-24 h-24 rounded-full bg-violet-600 flex items-center justify-center p-1 shadow-xl shadow-violet-600/20">
-                                   <img src="img/contact.png" alt="Avatar" class="w-full h-full object-cover rounded-full border-2 border-white/10"/>
+                                   <img src="/public/img/contact.png" alt="Avatar" class="w-full h-full object-cover rounded-full border-2 border-white/10"/>
                                 </div>
                             </div>
                             
