@@ -228,11 +228,12 @@ const trocarCor = () => {
                         <h2 class="font-mono text-[#4ade80] text-lg md:text-xl font-bold mb-5 tracking-wide">Sobre Mim</h2>
                         
                         <h3 :class="[corDoTexto, 'font-mono text-lg md:text-xl font-bold max-w-3xl mb-8 leading-relaxed transition-colors duration-500']">
-                            Sou um desenvolvedor de software apaixonado, buscando minha primeira oportunidade.
+                            Desenvolvedor Full Stack Especializado em Soluções Web Modernas
                         </h3>
                         
                         <p :class="[corSubTexto, 'text-sm md:text-base leading-relaxed max-w-3xl mb-8 font-medium font-sans transition-colors duration-500']">
-                            Além do código, sou um profissional movido pelo aprendizado contínuo e apaixonado por soluções web modernas. Estou em busca de oportunidades para somar minhas habilidades de desenvolvimento Full Stack a uma equipe de tecnologia inovadora, estando totalmente disponível para relocação e novos desafios profissionais.
+                            Sou um desenvolvedor de software experiente, com foco em desenvolvimento Full Stack e soluções web modernas. Domino tecnologias atuais e possuo sólida experiência na construção de aplicações robustas, escaláveis e de alta performance.
+                            Comprometido com o aprendizado contínuo, priorizo a entrega de código limpo, eficiente e bem estruturado. Estou totalmente disponível para relocação e pronto para contribuir em projetos desafiadores ao lado de equipes de tecnologia inovadoras.
                         </p>
 
                         <div :class="[corDoTexto, 'flex items-center gap-6']">
