@@ -96,7 +96,6 @@ const trocarCor = () => {
 </script>
 
 <template>
-    <div id="google_translate_element" class="hidden"></div>
     
     <div :class="[corDeFundo, corDoTexto, 'min-h-screen font-sans antialiased selection:bg-violet-500 selection:text-white relative z-10 transition-colors duration-500']">
         
