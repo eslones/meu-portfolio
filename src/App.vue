@@ -398,4 +398,3 @@ const trocarCor = () => {
 
     </div>
 </template>
- entao arrume o codigo para vue
