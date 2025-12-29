@@ -1,31 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 
-const lang = ref('pt')
-
-const textos = {
-  pt: {
-    inicio: 'Início',
-    sobre: 'Sobre',
-    projetos: 'Projetos',
-    contato: 'Contato',
-    titulo: 'Desenvolvedor Full-Stack',
-    descricao: 'Especialista em criar aplicações web completas'
-  },
-  en: {
-    inicio: 'Home',
-    sobre: 'About',
-    projetos: 'Projects',
-    contato: 'Contact',
-    titulo: 'Full-Stack Developer',
-    descricao: 'Specialist in building complete web applications'
-  }
-}
-
-const trocarIdioma = () => {
-  lang.value = lang.value === 'pt' ? 'en' : 'pt'
-}
-
 // Estado para controlar o menu mobile
 const isMobileMenuOpen = ref(false);
 
@@ -121,52 +96,67 @@ const trocarCor = () => {
 </script>
 
 <template>
-  <div :class="[corDeFundo, corDoTexto, 'min-h-screen font-sans antialiased selection:bg-violet-500 selection:text-white relative z-10 transition-colors duration-500']">
+    
+    <div :class="[corDeFundo, corDoTexto, 'min-h-screen font-sans antialiased selection:bg-violet-500 selection:text-white relative z-10 transition-colors duration-500']">
+        
+        <img id="background" class="fixed -left-20 top-0 max-w-[877px] pointer-events-none z-0 opacity-50 mix-blend-screen" />
+        
+        <header :class="[corHeader, 'fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/5 transition-all duration-500']">
+            <div class="max-w-7xl mx-auto px-6">
+                <nav class="flex justify-between items-center h-20">
+                    
+                    <div class="flex-shrink-0">
+                        <a href="/" :class="[corDoTexto, 'text-2xl font-bold font-mono hover:text-violet-500 transition']">
+                            Matheus<span class="text-violet-500">.Dev</span>
+                        </a>
+                    </div>
 
-    <header :class="[corHeader, 'fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/5 transition-all duration-500']">
-      <div class="max-w-7xl mx-auto px-6">
-        <nav class="flex justify-between items-center h-20">
+                    <ul :class="[corDoTexto, 'hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest font-mono']">
+                        <li><a href="#" class="hover:text-violet-500 transition">Inicio</a></li>
+                        <li><a href="#sobre" class="hover:text-violet-500 transition">Sobre</a></li>
+                        <li><a href="#projetos" class="hover:text-violet-500 transition">Projetos</a></li>
+                        <li><a href="#contato" class="hover:text-violet-500 transition">Contato</a></li>
+                    </ul>
 
-          <a href="/" class="text-2xl font-bold font-mono hover:text-violet-500 transition">
-            Matheus<span class="text-violet-500">.Dev</span>
-          </a>
+                    <div class="flex items-center gap-4">
+                        <div :class="[corDoTexto, 'hidden md:flex items-center gap-4']">
+                            <a href="https://github.com/eslones" target="_blank" class="hover:text-violet-500 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+                            </a>
+                            <button @click="trocarCor" class="hover:text-violet-500 transition transform active:scale-95">
+                                <svg v-if="corDeFundo === 'bg-[#030712]'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+                            </button>
+                        </div>
+                        
+                        <button @click="toggleMenu" :class="[corDoTexto, 'md:hidden hover:opacity-80 transition focus:outline-none p-2']">
+                            <svg v-if="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+                            <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </button>
+                    </div>
+                </nav>
 
-          <!-- MENU DESKTOP -->
-          <ul class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest font-mono">
-            <li><a href="#" class="hover:text-violet-500 transition">{{ textos[lang].inicio }}</a></li>
-            <li><a href="#sobre" class="hover:text-violet-500 transition">{{ textos[lang].sobre }}</a></li>
-            <li><a href="#projetos" class="hover:text-violet-500 transition">{{ textos[lang].projetos }}</a></li>
-            <li><a href="#contato" class="hover:text-violet-500 transition">{{ textos[lang].contato }}</a></li>
-          </ul>
+                <div v-show="isMobileMenuOpen" :class="[corDeFundo, 'md:hidden absolute top-20 left-0 w-full border-b border-white/10 shadow-2xl animate-fade-in pb-6']">
+                    <ul class="flex flex-col p-6 text-center space-y-4 font-mono">
+                        <li><a href="#" @click="isMobileMenuOpen = false" :class="[corDoTexto, 'block py-3 hover:text-violet-500 hover:bg-violet-500/10 rounded-lg transition font-extrabold uppercase tracking-widest']">Inicio</a></li>
+                        <li><a href="#sobre" @click="isMobileMenuOpen = false" :class="[corDoTexto, 'block py-3 hover:text-violet-500 hover:bg-violet-500/10 rounded-lg transition font-extrabold uppercase tracking-widest']">Sobre</a></li>
+                        <li><a href="#projetos" @click="isMobileMenuOpen = false" :class="[corDoTexto, 'block py-3 hover:text-violet-500 hover:bg-violet-500/10 rounded-lg transition font-bold uppercase tracking-widest']">Projetos</a></li>
+                        <li><a href="#contato" @click="isMobileMenuOpen = false" :class="[corDoTexto, 'block py-3 hover:text-violet-500 hover:bg-violet-500/10 rounded-lg transition font-bold uppercase tracking-widest']">Contato</a></li>
+                        
+                        <li class="w-full h-px bg-white/10 my-2"></li>
 
-          <!-- AÇÕES -->
-          <div class="flex items-center gap-4">
-            <button @click="trocarIdioma" class="hover:text-violet-500 transition">
-              🌍
-            </button>
-
-            <button @click="trocarCor" class="hover:text-violet-500 transition">
-              ☀️
-            </button>
-
-            <button @click="toggleMenu" class="md:hidden">
-              ☰
-            </button>
-          </div>
-        </nav>
-
-        <!-- MENU MOBILE -->
-        <div v-show="isMobileMenuOpen" :class="[corDeFundo, 'md:hidden absolute top-20 left-0 w-full border-b border-white/10 shadow-2xl pb-6']">
-          <ul class="flex flex-col p-6 text-center space-y-4 font-mono">
-            <li><a @click="isMobileMenuOpen=false" href="#" class="block py-3 hover:text-violet-500">{{ textos[lang].inicio }}</a></li>
-            <li><a @click="isMobileMenuOpen=false" href="#sobre" class="block py-3 hover:text-violet-500">{{ textos[lang].sobre }}</a></li>
-            <li><a @click="isMobileMenuOpen=false" href="#projetos" class="block py-3 hover:text-violet-500">{{ textos[lang].projetos }}</a></li>
-            <li><a @click="isMobileMenuOpen=false" href="#contato" class="block py-3 hover:text-violet-500">{{ textos[lang].contato }}</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </header>
+                        <li class="flex items-center justify-center gap-8 pt-2">
+                             <a href="https://github.com/eslones" target="_blank" :class="[corDoTexto, 'hover:text-violet-500 transition']">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+                            </a>
+                            <button @click="trocarCor" :class="[corDoTexto, 'hover:text-violet-500 transition']">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>                  
+            </div>
+        </header>
 
         <main class="pt-24 lg:pt-32">
             
@@ -386,7 +376,6 @@ const trocarCor = () => {
         </main>
         
         <footer :class="[corDeFundo, 'border-t border-white/10 pt-10 pb-10 transition-colors duration-500']">
-
             <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
                 
                 <div class="text-gray-400 text-sm">
