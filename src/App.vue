@@ -30,7 +30,7 @@ const projects = [
         description: "Este site que você está vendo! Desenvolvido com foco em performance, SEO e design responsivo, utilizando as melhores práticas do ecossistema Vue e Tailwind.",
         image: "/img/portfolio.png",
         tags: ["Vue 3", "TailwindCSS", "Vite"],
-        githubLink: "https://github.com/eslones",
+        githubLink: "https://github.com/eslones/meu-portfolio",
         previewLink: "https://matheuscandido.vercel.app"
     },
         {
@@ -39,7 +39,7 @@ const projects = [
         description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
         image: "/img/agendamento.png",
         tags: ["Vue 3", "TailwindCSS", "Vite", "Node.js", "AI Integration"],
-        githubLink: "https://github.com/eslones",
+        githubLink: "https://github.com/eslones/Barbearia-Agendamento",
         previewLink: "https://cortetesoura.vercel.app"
     },
     {
