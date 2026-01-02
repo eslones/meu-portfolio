@@ -24,6 +24,24 @@ const form = ref({
 
 // Dados dos projetos
 const projects = [
+        {
+        title: "Portfólio Pessoal",
+        date: "Out - Dez 2025",
+        description: "Este site que você está vendo! Desenvolvido com foco em performance, SEO e design responsivo, utilizando as melhores práticas do ecossistema Vue e Tailwind.",
+        image: "/img/portfolio.png",
+        tags: ["Vue 3", "TailwindCSS", "Vite"],
+        githubLink: "https://github.com/eslones",
+        previewLink: "https://matheuscandido.vercel.app"
+    },
+        {
+        title: "Sistema de Agendamento",
+        date: "Dez - Jan 2026",
+        description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
+        image: "/img/agendamento.png",
+        tags: ["Vue 3", "TailwindCSS", "Vite", "Node.js", "AI Integration"],
+        githubLink: "https://github.com/eslones",
+        previewLink: "https://cortetesoura.vercel.app"
+    },
     {
         title: "E-Commerce Full Stack",
         date: "Em breve",
@@ -41,24 +59,6 @@ const projects = [
         tags: ["JavaScript", "Canvas API", "HTML5"],
         githubLink: "https://github.com/eslones",
         previewLink: "#"
-    },
-    {
-        title: "Sistema de Agendamento",
-        date: "Dez - Jan 2026",
-        description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
-        image: "/img/agendamento.png",
-        tags: ["Vue 3", "TailwindCSS", "Vite", "Node.js", "AI Integration"],
-        githubLink: "https://github.com/eslones",
-        previewLink: "https://cortetesoura.vercel.app"
-    },
-    {
-        title: "Portfólio Pessoal",
-        date: "Out - Dez 2025",
-        description: "Este site que você está vendo! Desenvolvido com foco em performance, SEO e design responsivo, utilizando as melhores práticas do ecossistema Vue e Tailwind.",
-        image: "/img/portfolio.png",
-        tags: ["Vue 3", "TailwindCSS", "Vite"],
-        githubLink: "https://github.com/eslones",
-        previewLink: "https://matheuscandido.vercel.app"
     }
 ];
 
