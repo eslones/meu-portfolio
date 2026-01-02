@@ -44,12 +44,12 @@ const projects = [
     },
     {
         title: "Sistema de Agendamento",
-        date: "Em breve",
+        date: "Dez - Jan 2026",
         description: "SaaS para barbearias com Chatbot inteligente. O bot consome uma API RESTful para verificar disponibilidade e realizar agendamentos automáticos via WhatsApp.",
         image: "/img/agendamento.png",
-        tags: ["PHP", "Node.js", "AI Integration"],
+        tags: ["Vue 3", "TailwindCSS", "Vite", "Node.js", "AI Integration"],
         githubLink: "https://github.com/eslones",
-        previewLink: "#"
+        previewLink: "https://cortetesoura.vercel.app"
     },
     {
         title: "Portfólio Pessoal",
@@ -58,7 +58,7 @@ const projects = [
         image: "/img/portfolio.png",
         tags: ["Vue 3", "TailwindCSS", "Vite"],
         githubLink: "https://github.com/eslones",
-        previewLink: "#"
+        previewLink: "https://matheuscandido.vercel.app"
     }
 ];
 
@@ -95,8 +95,7 @@ const trocarCor = () => {
 }; 
 </script>
 
-<template>
-    
+<template>   
     <div :class="[corDeFundo, corDoTexto, 'min-h-screen font-sans antialiased selection:bg-violet-500 selection:text-white relative z-10 transition-colors duration-500']">
         
         <img id="background" class="fixed -left-20 top-0 max-w-[877px] pointer-events-none z-0 opacity-50 mix-blend-screen" />
@@ -398,4 +397,3 @@ const trocarCor = () => {
 
     </div>
 </template>
- entao arrume o codigo para vue
