@@ -390,8 +390,5 @@ const trocarCor = () => {
         </footer>
 
     </div>
-<<<<<<< HEAD
+
 </template>
-=======
-</template>
->>>>>>> 2f192f16c5511475a5cde18d5ee2e91ea7d670e4
