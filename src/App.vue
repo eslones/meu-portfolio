@@ -215,8 +215,8 @@ const trocarCor = () => {
 
             <section id="sobre" :class="[corDeFundo, 'py-50 px-6 transition-colors duration-500']">
                 <div class="max-w-4xl mx-auto flex flex-col items-center text-center ">
-                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-[3px] border-[#6d28d9] p-1 mb-10 relative">
-                            <img src="/public/img/minhafoto.jpg" alt="Matheus Candido" class="flex w-full h-full object-cover rounded-full"/>
+                        <div class="w-30 h-30 md:w-50 md:h-50 rounded-full border-[3px] border-[#6d28d9] p-1 mb-10 relative">
+                            <img src="/public/img/minhafoto.png" alt="Matheus Candido" class="flex w-full h-full object-cover rounded-full"/>
                         </div>
                         <h2 class="font-mono text-[#4ade80] text-lg md:text-xl font-bold mb-5 tracking-wide">Sobre Mim</h2>
                         
