@@ -181,7 +181,7 @@ const trocarCor = () => {
 
                 <div class="relative flex-shrink-0">
                     <div class="w-64 h-64 lg:w-[450px] lg:h-[450px] rounded-full border-[6px] border-violet-500 overflow-hidden shadow-2xl shadow-violet-500/20 bg-gray-900/50 relative z-10">
-                        <img src="/img/ee.png" alt="Foto de Matheus Candido" class="object-cover w-full h-full"/>
+                        <img src="/img/ee.png" alt="Foto de Matheus Candido" class="object-fill w-full h-full"/>
                     </div>
                     <div class="absolute inset-0 bg-violet-500 blur-[100px] opacity-30 rounded-full -z-10"></div>
                 </div>
@@ -312,7 +312,7 @@ const trocarCor = () => {
                         <div class="flex flex-col justify-center">
                             <div class="flex items-center gap-6 mb-8">
                                 <div class="w-24 h-24 rounded-full bg-violet-600 flex items-center justify-center p-1 shadow-xl shadow-violet-600/20">
-                                   <img src="/public/img/contact.png" alt="Avatar" class="w-full h-full object-cover rounded-full border-2 border-white/10"/>
+                                   <img src="/public/img/contact.png" alt="Avatar" class="w-full h-full object-fit rounded-full border-2 border-white/10"/>
                                 </div>
                             </div>
                             
